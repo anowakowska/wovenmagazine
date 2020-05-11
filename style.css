@@ -1,0 +1,189 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+#header {
+    display: flex;
+    margin: auto;
+    width: 970px;
+    height: 52px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.woven {
+    height: 100%;
+}
+
+.logo {
+    padding: 15px;
+    height: 100%;
+}
+
+.search {
+    height: 15px;
+}
+
+.shop,
+.cart {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.home {
+    background-image: url('zlodziej.jpg');
+    background-position: left 30% top 30%;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 880px;
+    margin: 0 18px;
+}
+
+h2 {
+    color: rgb(238, 238, 238);
+    font-size: 45px;
+    position: absolute;
+    text-align: center;
+    right: 50%;
+    left: 50%;
+    top: 75%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.button {
+    background-color: transparent;
+    border-color: rgb(238, 238, 238);
+    border-width: 2px;
+    color: rgb(238, 238, 238);
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 8px 15px;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    top: 86%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    width: 150px;
+    transition-duration: .7s;
+}
+
+.button:hover {
+    background-color: rgb(238, 238, 238);
+    color: black;
+    transition-duration: .7s;
+}
+
+.aboutus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 970px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.aboutus-left {
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+
+.aboutus-left,
+.aboutus-right {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.designtravel {
+    margin-bottom: 0;
+}
+
+.ourstory {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 1.6;
+    margin-top: -10px;
+    margin-bottom: 0;
+}
+
+.about {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.thestories {
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    padding: 50px;
+}
+
+.secondarymark {
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    align-items: center;
+}
+
+.textstories {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4.5px;
+    font-size: 20px;
+    margin: 10px auto;
+    width: fit-content;
+}
+
+.storiesmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 70px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.underline {
+    width: 200px;
+    height: 28px;
+    border-bottom: 1px black;
+    border-bottom-style: solid;
+}
+
+.sortby {
+    margin-left: 10px;
+}
+
+.seefilms {
+    margin-left: 1200px;
+}
+
+.blog {
+    margin: 70px;
+    display: flex;
+}
+
+.martin {
+    width: 400px;
+}
+
+.house {
+    width: 400px;
+}
