@@ -178,12 +178,13 @@ h2 {
 
 .blog {
     margin: 70px;
+    padding: 0 -18px;
     display: flex;
     justify-content: space-between;
 }
 
 .post-photo {
-    width: 420px;
+    width: 100%;
 }
 
 .author, 
@@ -208,9 +209,10 @@ h2 {
 
 .blog-post {
     background-color: white;
-    width: 420px;
+    width: 100%;
     height: fit-content;
     padding-bottom: 20px;
+    margin: 0 18px 0 0;
 }
 
 .title {
