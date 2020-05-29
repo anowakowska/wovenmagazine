@@ -108,11 +108,11 @@ h2 {
     justify-content: flex-end;
 }
 
-.designtravel {
+.design-travel {
     margin-bottom: 0;
 }
 
-.ourstory {
+.our-story {
     font-family: 'Lora', serif;
     font-size: 16px;
     letter-spacing: .5px;
@@ -128,20 +128,20 @@ h2 {
     letter-spacing: 1px;
 }
 
-.thestories {
+.stories {
     width: 100%;
     background-color: rgb(238, 238, 238);
     padding: 50px;
 }
 
-.secondarymark {
+.secondary-mark {
     margin: 0 auto;
     display: block;
     width: 100px;
     align-items: center;
 }
 
-.textstories {
+.text-stories {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 4.5px;
     font-size: 20px;
@@ -149,7 +149,7 @@ h2 {
     width: fit-content;
 }
 
-.storiesmenu {
+.stories-menu {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -167,12 +167,12 @@ h2 {
     border-bottom-style: solid;
 }
 
-.sortby {
+.sort-by {
     margin-left: 10px;
     font-size: 10px;
 }
 
-.seefilms {
+.see-films {
     margin-left: 1200px;
 }
 
@@ -182,7 +182,7 @@ h2 {
     justify-content: space-between;
 }
 
-.postphoto {
+.post-photo {
     width: 420px;
 }
 
@@ -202,11 +202,11 @@ h2 {
     color: black;
 }
 
-.authorcategory {
+.author-category {
     margin: 24px;
 }
 
-.blogpost {
+.blog-post {
     background-color: white;
     width: 420px;
     height: fit-content;
@@ -245,13 +245,13 @@ h2 {
     margin: 0px 0px 20px 340px;
 }
 
-.newissue {
+.new-issue {
     margin-left: auto;
     margin-right: auto;
     width: 360px;
 }
 
-.futurepast {
+.future-past {
     font-family: 'Libre Caslon Text', serif;
     font-size: 28px;
     display: block;
@@ -259,7 +259,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-.issuefour {
+.issue-four {
     font-size: 16x;
     letter-spacing: 0.5px;
 }
