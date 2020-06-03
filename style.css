@@ -338,3 +338,33 @@ h2 {
     -webkit-transform: rotate(45deg);
     vertical-align: 25%;
 }
+
+.videos {
+    padding-top: 1%;
+    background-color: rgb(230, 230, 230);
+}
+
+.selected-films {
+    display: block;
+    margin: 0 auto 2%;
+    width: fit-content;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    background-color: rgb(230, 230, 230);;
+}
+
+.thumbnails {
+    display: flex;
+    min-height: 500px;
+}
+
+.video-left {
+    width: 100%;
+    margin-right: 0;
+}
+
+.video-right {
+    width: 100%;
+    margin-left: 0;
+}
