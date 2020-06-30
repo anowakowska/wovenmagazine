@@ -47,6 +47,31 @@ body {
     margin: 0 18px;
 }
 
+.prev-next {
+    padding-top: 20%;
+    position: absolute;
+    width: 100%;
+}
+
+.prev-btn,
+.next-btn {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: rgb(238, 238, 238);
+    width: fit-content;
+    top: 50%;
+    padding: 0;
+}
+
+.prev-btn {
+    transform: rotate(-90deg);
+}
+
+.next-btn {
+    transform: rotate(+90deg);
+}
+
 h2 {
     color: rgb(238, 238, 238);
     font-size: 45px;
@@ -60,7 +85,7 @@ h2 {
     width: 100%;
 }
 
-.button {
+.read {
     background-color: transparent;
     border-color: rgb(255, 255, 255);
     border-width: 2px;
@@ -78,9 +103,10 @@ h2 {
     transform: translateX(-50%);
     width: 150px;
     transition-duration: .7s;
+    outline: none;
 }
 
-.button:hover {
+.read:hover {
     background-color: rgb(255, 255, 255);
     color: black;
     transition-duration: .7s;
