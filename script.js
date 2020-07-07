@@ -69,10 +69,23 @@ function nextMagazinePhoto() {
     changeMagazinePhotos();
 };
 
+function previousMagazinePhoto() {
+    if(currentMagazinePhoto === 0) {
+        currentMagazinePhoto = currentMagazinePhoto +4;
+    }
+    else {
+        currentMagazinePhoto = currentMagazinePhoto - 1;
+    }
+    changeMagazinePhotos();
+}
+
 function changeMagazinePhotos() {
     document.getElementById('issue-photo').src = magazinePhotos[currentMagazinePhoto];
 };
 
 document.getElementById('next-arrow').addEventListener('click', function() {
     nextMagazinePhoto()
+});
+document.getElementById('prev-arrow').addEventListener('click', function() {
+    previousMagazinePhoto()
 });
