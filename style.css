@@ -72,6 +72,20 @@ body {
     transform: rotate(+90deg);
 }
 
+.arrow-scroll {
+    position: absolute;
+    width: 100%;
+    left: 95%;
+    top: 85%;
+}
+
+#arrow-scroll-down {
+    color: white;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
 h2 {
     color: rgb(238, 238, 238);
     font-size: 45px;

@@ -89,3 +89,14 @@ document.getElementById('next-arrow').addEventListener('click', function() {
 document.getElementById('prev-arrow').addEventListener('click', function() {
     previousMagazinePhoto()
 });
+
+
+let scroll = document.getElementById('scroll-to');
+
+function scrollDown() {
+    scroll.scrollIntoView({behavior: 'smooth'});
+};
+
+document.getElementById('arrow-scroll-down').addEventListener('click', function() {
+    scrollDown()
+});
