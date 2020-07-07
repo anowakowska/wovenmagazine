@@ -18,35 +18,35 @@ let cottonPhoto = {
     description: 'A Cotton Canvas'
 };
 
-let currentPhoto = 0;
+let currentBackgroundPhoto = 0;
 
 let slides = [mountainsPhoto, peoplePhoto, girlPhoto, cottonPhoto];
 
 function changeNextPhoto() {
-    currentPhoto = currentPhoto + 1;
+    currentBackgroundPhoto = currentBackgroundPhoto + 1;
 
-    if(currentPhoto === slides.length) {
-        currentPhoto = 0;
+    if(currentBackgroundPhoto === slides.length) {
+        currentBackgroundPhoto = 0;
     }
     changeSlide();
 };
 
 function changePreviousPhoto() {
 
-    if(currentPhoto === 0) {
-        currentPhoto = currentPhoto + 3;
+    if(currentBackgroundPhoto === 0) {
+        currentBackgroundPhoto = currentBackgroundPhoto + 3;
     }
     else {
-    currentPhoto = currentPhoto - 1;
+    currentBackgroundPhoto = currentBackgroundPhoto - 1;
     }
    changeSlide();
 };
 
 function changeSlide() {
 
-    document.getElementById('home-background').style.backgroundImage = `url(${slides[currentPhoto].image})`;
+    document.getElementById('home-background').style.backgroundImage = `url(${slides[currentBackgroundPhoto].image})`;
     
-    document.getElementById('home-description').innerHTML = slides[currentPhoto].description;
+    document.getElementById('home-description').innerHTML = slides[currentBackgroundPhoto].description;
 };
 
 document.getElementById('next-photo').addEventListener('click', function() {
@@ -54,4 +54,25 @@ document.getElementById('next-photo').addEventListener('click', function() {
 });
 document.getElementById('prev-photo').addEventListener('click', function() {
     changePreviousPhoto()
+});
+
+
+let magazinePhotos = ['cover.jpg', 'arcosanti.jpg', 'article.jpg', 'architecture.jpg', 'ceramic.jpg'];
+
+let currentMagazinePhoto = 0;
+
+function nextMagazinePhoto() {
+    currentMagazinePhoto = currentMagazinePhoto + 1;
+    if(currentMagazinePhoto === magazinePhotos.length) {
+        currentMagazinePhoto = 0;
+    }
+    changeMagazinePhotos();
+};
+
+function changeMagazinePhotos() {
+    document.getElementById('issue-photo').src = magazinePhotos[currentMagazinePhoto];
+};
+
+document.getElementById('next-arrow').addEventListener('click', function() {
+    nextMagazinePhoto()
 });
