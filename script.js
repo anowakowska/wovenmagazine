@@ -100,3 +100,11 @@ function scrollDown() {
 document.getElementById('arrow-scroll-down').addEventListener('click', function() {
     scrollDown()
 });
+
+function dropdownMenu() {
+    document.getElementById('menu-content').classList.toggle('show-menu')
+};
+
+document.getElementById('hover-menu').addEventListener('click', function() {
+    dropdownMenu()
+}); 
