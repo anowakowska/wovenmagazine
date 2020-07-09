@@ -101,8 +101,13 @@ document.getElementById('arrow-scroll-down').addEventListener('click', function(
     scrollDown()
 });
 
-function dropdownMenu() {
-    document.getElementById('menu-content').classList.toggle('show-menu')
+function dropdownMenu(event) {
+    let dropdown = document.getElementById('menu-content').classList.toggle('show-menu')
+    if(event.target.classList.contains('dropdown-content')) {
+        dropdown.classList.toggle('show');
+    } else {
+        dropdown.classList.remove('show')
+        }
 };
 
 document.getElementById('hover-menu').addEventListener('click', function() {
