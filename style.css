@@ -88,7 +88,6 @@ body {
 .overlay-three:hover,
 .overlay-two:hover,
 .overlay-postcards:hover {
-    opacity: 1;
     transition-duration: .5s;
     opacity: .9;
 }
@@ -329,6 +328,7 @@ h2 {
 
 .post-photo {
     width: 100%;
+    display: block;
 }
 
 .author, 
@@ -349,6 +349,43 @@ h2 {
 
 .author-category {
     margin: 24px;
+}
+
+.image-wrap {
+    position: relative;
+}
+
+.blog-post:hover {
+    background: rgb(202, 230, 216);
+    transition-duration: .1s;
+}
+
+.blog-overlay {
+    background-color: white;
+    z-index: 2;
+    opacity: 0;
+    transition-duration: .1s;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.blog-post:hover .blog-overlay,
+.blog-post:hover .blog-post {
+    opacity: .9;
+}
+
+.read-story-overlay,
+.story-arrow-right {
+    color: rgb(7, 160, 101);
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    position: relative;
+    margin: auto;
+    top: 50%;
+    width: fit-content;
 }
 
 .blog-post {
