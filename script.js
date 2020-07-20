@@ -106,10 +106,23 @@ function dropdownMenu(event) {
     if(event.target.classList.contains('dropdown-content')) {
         dropdown.classList.toggle('show');
     } else {
-        dropdown.classList.remove('show')
+        dropdown.classList.remove('show');
         }
 };
 
 document.getElementById('hover-menu').addEventListener('click', function() {
     dropdownMenu()
 }); 
+
+function sortByMenu(event) {
+    let dropdownCategoriesMenu = document.getElementById('category-list').classList.toggle('show-categories')
+    if(event.target.classList.contains('categories-menu')) {
+        dropdownCategoriesMenu.classList.toggle('show-categories');
+    } else {
+        dropdownCategoriesMenu.classList.remove('show-categories');
+    }
+};
+
+document.getElementById('stories-menu').addEventListener('mouseover', function() {
+    sortByMenu()
+});
