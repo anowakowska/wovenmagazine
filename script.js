@@ -101,28 +101,73 @@ document.getElementById('arrow-scroll-down').addEventListener('click', function(
     scrollDown()
 });
 
-function dropdownMenu(event) {
-    let dropdown = document.getElementById('menu-content').classList.toggle('show-menu')
-    if(event.target.classList.contains('dropdown-content')) {
-        dropdown.classList.toggle('show');
-    } else {
-        dropdown.classList.remove('show');
-        }
+let menuElement = document.getElementById('hover-menu');
+let menuButton = menuElement[0];
+let contentElement = document.getElementById('menu-content');
+let menuContent = contentElement[0];
+
+function showHideDropdownMenu() {
+    document.getElementById('menu-content').classList.toggle('show-menu');
 };
 
-document.getElementById('hover-menu').addEventListener('click', function() {
-    dropdownMenu()
+document.getElementById('hover-menu').addEventListener('click', function(event) {
+    event.stopPropagation();
+    showHideDropdownMenu();
 }); 
 
-function sortByMenu(event) {
-    let dropdownCategoriesMenu = document.getElementById('category-list').classList.toggle('show-categories')
-    if(event.target.classList.contains('categories-menu')) {
-        dropdownCategoriesMenu.classList.toggle('show-categories');
-    } else {
-        dropdownCategoriesMenu.classList.remove('show-categories');
-    }
-};
+function hideDropdownMenu() {
+    document.getElementById('menu-content').classList.remove('show-menu');
+}
 
-document.getElementById('stories-menu').addEventListener('mouseover', function() {
-    sortByMenu()
+document.addEventListener('click', hideDropdownMenu);
+
+let blogPosts = [
+     {
+        author: 'SHANTELL MARTIN',
+        category: 'ART',
+        title: 'Well, ARE YOU?',
+        description: 'Artist and educator Shantell Martin uses her work to ask the ultimate question of identity: Are you, YOU?',
+        date: '.12.30.19.'
+    },
+    {
+        author: 'CRÉ NATURAL BUILDING',
+        category: 'ARCHITECTURE',
+        title: 'Closer to Home',
+        description: 'Bryce Ehrecke & Kelly Brown share how natural building could empower both a more beautiful and a more sustainable future.',
+        date: '.11.11.19.'
+    },
+    {
+        author: 'ALISON CARROL',
+        category: 'ENTREPRENEUR',
+        title: 'Wonder Valley',
+        description: 'Wonder Valley is a built around the essentials for cultivatin rich existence, with good food and good health for a good life.',
+        date: '.10.30.19.'
+    },
+    {
+        author: 'JUSTIN CHUNG',
+        category: 'PHOTOGRAPHER',
+        title: 'Faculty Department',
+        description: 'Photographer Justin Chung’s project Faculty Department is an ode to the inspiration found in his subjects.',
+        date: '.10.21.19.'
+    }
+];
+
+function onCategoryChosen(event) {
+    const category = event.target.getAttribute('data-category');
+    let filteredBlogPosts = blogPosts.filter(function(blogPost) {
+        if (blogPost.category === category) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+    console.log(filteredBlogPosts);
+
+    document.getElementById('blog').classList.toggle('show-blog-post')
+
+}
+
+
+document.querySelectorAll('.category-button').forEach(function(categoryButton) {
+    categoryButton.onclick = onCategoryChosen;
 });
